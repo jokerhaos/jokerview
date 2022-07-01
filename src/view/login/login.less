@@ -1,0 +1,54 @@
+.login{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://api.sunweihu.com/api/bing1/api.php');
+    // background-image: url('https://api.lvmoo.com/bing/bing.jpg');
+    // background-image: url('https://area.sinaapp.com/bingImg');
+    // background-image: url('https://api.lvmoo.com/bing/bing.jpg');
+    // background-image: url('https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1522298284417&di=93b23f35dafef80f59ce08f94cb55485&imgtype=0&src=http%3A%2F%2Fpic1.win4000.com%2Fwallpaper%2F5%2F57f9f8a90fd3f.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    animation: move1 10s;/*这句话的意思是2秒之内执行完这个动画*/  
+    /*animation: move1 2s infinite;*/  
+    /*infinite这个单词意思是无限的的，也就是加上之后会一直重复操作，类似于定时器中的重复执行*/  
+           
+    @keyframes move1 {  
+        /*这个就是要执行的动画*/  
+        from {  transform: scale(3);  }  
+        /*从它到它，scale()方法，该元素增加或减少的大小，取决于宽度（X轴）和高度（Y轴）的参数，这个是css3中2D的转换方法。*/  
+        to {  transform: scale(1);  }  
+    }  
+
+
+
+    &-con{
+        position: absolute;
+        right: 160px;
+        top: 50%;
+        transform: translateY(-60%);
+        width: 300px;
+        &-header{
+            font-size: 16px;
+            font-weight: 300;
+            text-align: center;
+            padding: 30px 0;
+        }
+        .form-con{
+            padding: 10px 0 0;
+        }
+        .login-tip{
+            font-size: 10px;
+            text-align: center;
+            color: #c3c3c3;
+        }
+    }
+}
+.img-logo{
+    position: absolute;
+    top:1%;
+    left:0.5%;
+    height: 80px;
+}
